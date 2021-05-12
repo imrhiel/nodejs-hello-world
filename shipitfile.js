@@ -14,7 +14,7 @@ module.exports = shipit => {
       }
     },
     staging: {
-      servers: 'akeneo@partners-directory-staging.ip.akeneo.com'
+      servers: '-p 2323 akeneo@partners-directory-staging.ip.akeneo.com'
     }
   });
 
