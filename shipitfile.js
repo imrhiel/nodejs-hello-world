@@ -29,10 +29,6 @@ module.exports = shipit => {
     shipit.start('npm-install', 'copy-config');
   });
 
-  shipit.on('published', () => {
-    shipit.start('pm2-server');
-  });
-
 shipit.blTask('copy-config', async () => {
 
 const fs = require('fs');
@@ -66,13 +62,6 @@ apps: [
 
 shipit.blTask('npm-install', async () => {
   shipit.remote(`cd ${shipit.releasePath} && npm install --production`);
-});
-
-shipit.blTask('pm2-server', async () => {
-  await shipit.remote(`pm2 delete -s ${appName} || :`);
-  await shipit.remote(
-    `pm2 start ${ecosystemFilePath} --env staging --watch true`
-  );
 });
 
 };
