@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imrhiel/nodejs-hello-world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imrhiel/nodejs-hello-world/issues"
+  },
+  "homepage": "https://github.com/imrhiel/nodejs-hello-world#readme",
+  "devDependencies": {
+    "shipit-cli": "^5.3.0",
+    "shipit-deploy": "^5.3.0"
+  }
+}
