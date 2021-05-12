@@ -21,7 +21,6 @@ module.exports = shipit => {
   const path = require('path');
   const ecosystemFilePath = path.join(
     shipit.config.deployTo,
-    'shared',
     'ecosystem.config.js'
   );
 
